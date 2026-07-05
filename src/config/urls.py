@@ -17,8 +17,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from transactions.api import api  # Import the API instance
+from transactions.views import dashboard
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', api.urls),  # All API calls will start with /api/
+    path('', dashboard),
 ]
