@@ -1,0 +1,3 @@
+django
+psycopg2-binary  # The bridge between Python and PostgreSQL
+django-ninja
